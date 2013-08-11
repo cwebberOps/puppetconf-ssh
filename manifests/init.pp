@@ -1,6 +1,8 @@
 # == Class: ssh
 #
-class ssh {
+class ssh (
+  $maxstartups = 10
+){
 
   package {
     'openssh-server':

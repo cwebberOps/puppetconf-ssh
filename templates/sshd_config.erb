@@ -36,7 +36,7 @@ SyslogFacility AUTHPRIV
 # Authentication:
 
 #LoginGraceTime 2m
-#PermitRootLogin yes
+PermitRootLogin no
 #StrictModes yes
 #MaxAuthTries 6
 
@@ -93,7 +93,7 @@ AcceptEnv LC_IDENTIFICATION LC_ALL
 #AllowTcpForwarding yes
 #GatewayPorts no
 #X11Forwarding no
-X11Forwarding yes
+X11Forwarding no
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PrintMotd yes
@@ -108,7 +108,7 @@ X11Forwarding yes
 #ShowPatchLevel no
 #UseDNS yes
 #PidFile /var/run/sshd.pid
-#MaxStartups 10
+MaxStartups <%= @maxstartups %>
 #PermitTunnel no
 #ChrootDirectory none
 
