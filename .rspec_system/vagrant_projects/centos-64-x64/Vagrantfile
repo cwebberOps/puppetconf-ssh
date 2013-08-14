@@ -1,0 +1,8 @@
+Vagrant::Config.run do |c|
+  c.vm.define 'main.foo.vm' do |v|
+    v.vm.host_name = 'main.foo.vm'
+    v.vm.box = 'centos-64-x64-vbox4210-nocm'
+    v.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210-nocm.box'
+    v.vm.base_mac = '080027000AAE'
+  end
+end
